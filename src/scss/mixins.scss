@@ -1,0 +1,20 @@
+@function toRem($value) {
+    $remValue: $value + px; 
+    @return $remValue;
+}
+
+@mixin InterRegular($size_px) {
+    font-family: "Inter",sans-serif;
+    font-weight: 500;
+    font-size: toRem($size_px);
+}
+@mixin InterMedium($size_px) {
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    font-size: toRem($size_px);
+}
+@mixin InterSemiBold($size_px) {
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    font-size: toRem($size_px);
+}

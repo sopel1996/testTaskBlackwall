@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Inter";
+        src: url('/fonts/Inter-Regular.eot') format('embedded-opentype'), /* IE6-IE8 */ 
+             url('/fonts/Inter-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+             url('/fonts/Inter-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+             url('/fonts/Inter-Regular.woff2') format('woff2'); /* Super Modern Browsers */
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+        src: url('/fonts/Inter-Medium.eot') format('embedded-opentype'), /* IE6-IE8 */ 
+             url('/fonts/Inter-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+             url('/fonts/Inter-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+             url('/fonts/Inter-Medium.woff2') format('woff2'); /* Super Modern Browsers */
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+        src: url('/fonts/Inter-SemiBold.eot') format('embedded-opentype'), /* IE6-IE8 */ 
+             url('/fonts/Inter-SemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+             url('/fonts/Inter-SemiBold.woff') format('woff'), /* Pretty Modern Browsers */
+             url('/fonts/Inter-SemiBold.woff2') format('woff2'); /* Super Modern Browsers */
+    font-weight: 700;
+    font-display: swap;
+}
+

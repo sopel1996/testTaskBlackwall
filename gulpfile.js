@@ -123,7 +123,7 @@ gulp.task('watch', () => {
    });
    gulp.watch('./src/img/**', gulp.series('image_min'))
    //Следить за файлами со стилями с нужным расширением
-   gulp.watch('./src/css/**/*.scss', gulp.series('styles'))
+   gulp.watch('./src/scss/**/*.scss', gulp.series('styles'))
    //Следить за JS файлами
    gulp.watch('./src/js/**/*.js', gulp.series('scripts'))
 

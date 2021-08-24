@@ -1,0 +1,58 @@
+.sectionFirst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent url(../img/png/bgFirst.png) -15% 250% no-repeat;
+    &_header{
+        .sectionInner{
+
+            margin: 0 auto;
+            width: toRem(1400);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+            
+            &-Logo{}
+            &-Nav{
+                flex-grow: 2;
+                margin-left: toRem(110);
+                width: toRem(507);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                a{
+                    margin-right: toRem(60);
+                }
+            }
+            &-signInDownload{
+                
+                .signIn{}
+                .btn{}
+            }
+    }
+    &_main{
+        .sectionInner{
+            height: toRem(519);
+            background: transparent url(../img/svg/firstImg.svg) center right no-repeat;
+            background-size: contain;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+            &-text{
+                width: toRem(500);
+            .title{}
+            .text{}
+            .btn_green{}
+        }
+        &-img{
+            
+            
+        }
+    }
+}

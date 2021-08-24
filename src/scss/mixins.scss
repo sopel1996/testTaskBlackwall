@@ -18,3 +18,8 @@
     font-weight: 700;
     font-size: toRem($size_px);
 }
+@mixin InterBold($size_px) {
+    font-family: "Inter",sans-serif;
+    font-weight: 900;
+    font-size: toRem($size_px);
+}

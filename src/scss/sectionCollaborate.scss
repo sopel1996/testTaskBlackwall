@@ -1,0 +1,65 @@
+
+.sectionCollaborate{
+    margin-bottom: toRem(130);
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_textAndRating{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: toRem(50);
+        &-text{
+            width: toRem(500);
+            @include InterSemiBold(36);
+            color: $primary-color;
+            line-height: toRem(50);
+        }
+        &-rating{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &Item{
+                margin-right: toRem(80);
+                width: toRem(137);
+                height: toRem(134);
+                .number{
+                    @include InterBold(60);
+                    color: $primary-color;
+                    margin-bottom: toRem(10)
+                }
+                .textDecor{
+                    margin-bottom: toRem(12);
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    img{
+                        width: toRem(15);
+                        height: toRem(15);
+                        margin-right: toRem(5);
+                    }
+                }
+                .text{
+                    @include InterRegular(16);
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    &_logoList{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        // &-item{}
+    }
+}

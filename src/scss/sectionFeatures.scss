@@ -1,0 +1,53 @@
+.sectionFeatures{
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: toRem(40);
+    }
+    &_titleText{
+        width: toRem(542);
+        color: $primary-color;
+        &-title{
+            text-align: center;
+            @include InterSemiBold(48);
+            margin-bottom: toRem(12);
+        }
+        &-text{
+            text-align: center;
+            @include InterRegular(16);
+            line-height: toRem(30);
+            margin-bottom: toRem(50);
+        }
+    }
+    &_featuresList{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &-item{
+            width: toRem(320);
+            height: toRem(267);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            color: $primary-color;
+            &Img{}
+            &Title{
+               @include InterSemiBold(24);
+            }
+            &Text{
+                @include InterRegular(16);
+                opacity: 0.6;
+                line-height: toRem(26);
+            }
+            &LearnMore{
+                @include InterMedium(20);
+
+            }
+        }
+    }
+}

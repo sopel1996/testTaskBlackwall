@@ -126,6 +126,7 @@ gulp.task('watch', () => {
    gulp.watch('./src/scss/**/*.scss', gulp.series('styles'))
    //Следить за JS файлами
    gulp.watch('./src/js/**/*.js', gulp.series('scripts'))
+   gulp.watch('./src/fonts/*.ttf', gulp.series('fontsConverter'))
 
    gulp.watch('./src/*.html', gulp.series('html'))
    //При изменении HTML запустить синхронизацию
@@ -133,4 +134,4 @@ gulp.task('watch', () => {
 });
 
 //Таск по умолчанию, Запускает del, styles, scripts и watch
-gulp.task('default', gulp.series('del', 'html', gulp.parallel('styles', 'scripts', 'image_min', 'copy'), 'watch'));
+gulp.task('default', gulp.series('del', 'html', gulp.parallel('fontsConverter', 'styles', 'scripts', 'image_min', 'copy'), 'watch'));

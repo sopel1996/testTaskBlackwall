@@ -4,7 +4,10 @@
     align-items: center;
     justify-content: center;
     background: transparent url(../img/png/bgFirst.png) -15% 250% no-repeat;
+    margin-bottom: toRem(122);
     &_header{
+        @include InterMedium(18);
+        margin: toRem(35) 0 toRem(60) 0;
         .sectionInner{
 
             margin: 0 auto;
@@ -15,7 +18,10 @@
             justify-content: space-between;
         }
             
-            &-Logo{}
+            &-Logo{
+                width: toRem(114);
+                height: toRem(32);
+            }
             &-Nav{
                 flex-grow: 2;
                 margin-left: toRem(110);
@@ -30,8 +36,19 @@
             }
             &-signInDownload{
                 
-                .signIn{}
-                .btn{}
+                .signIn{
+                    margin-right: toRem(45);
+                }
+                .btn{
+                    width: toRem(135);
+                    height: toRem(50);
+                    border: none;
+                    outline: none;
+                    background-color: $primary-color;
+                    color: #fff;
+                    border-radius: 6px;
+                    @include InterMedium(17);
+                }
             }
     }
     &_main{
@@ -46,13 +63,27 @@
         }
             &-text{
                 width: toRem(500);
-            .title{}
-            .text{}
-            .btn_green{}
-        }
-        &-img{
-            
-            
+            .title{
+                color: $primary-color;
+                @include InterSemiBold(48);
+                margin-bottom: toRem(16);
+            }
+            .text{
+                color: $primary-color;
+                @include InterRegular(17);
+                margin-bottom: toRem(34);
+            }
+            .btn_green{
+                width: toRem(180);
+                height: toRem(66);
+                border: none;
+                outline: none;
+                background-color: $secondary-color;
+                color: $primary-color;
+                border-radius: 6px;
+                @include InterMedium(17);
+
+            }
         }
     }
 }

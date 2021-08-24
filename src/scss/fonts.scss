@@ -25,4 +25,13 @@
     font-weight: 700;
     font-display: swap;
 }
+@font-face {
+    font-family: "Inter";
+        src: url('/fonts/Inter-Bold.eot') format('embedded-opentype'), /* IE6-IE8 */ 
+             url('/fonts/Inter-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+             url('/fonts/Inter-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+             url('/fonts/Inter-Bold.woff2') format('woff2'); /* Super Modern Browsers */
+    font-weight: 900;
+    font-display: swap;
+}
 

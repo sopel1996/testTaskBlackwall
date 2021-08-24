@@ -3,11 +3,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: transparent url(../img/png/bgFirst.png) -15% 250% no-repeat;
+    background: transparent url(../img/png/bgFirst.png) top left no-repeat;
+    background-size: contain;
     margin-bottom: toRem(122);
     &_header{
         @include InterMedium(18);
         margin: toRem(35) 0 toRem(60) 0;
+        position: relative;
+
+        .toggle-icon{
+            /* иконка бургера */
+            background: url("../img/svg/burgerIcon.svg") 50% 50% no-repeat;
+            width:30px;
+            height:30px;
+            position:absolute;
+            top: 0px;
+            right: 30px;
+        }
+        input[type=checkbox],label{
+            display:none
+        }
+
+
         .sectionInner{
 
             margin: 0 auto;

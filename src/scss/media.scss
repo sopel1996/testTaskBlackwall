@@ -1,0 +1,220 @@
+@import 'color.scss';
+@import 'mixins.scss';
+@media only screen and (max-width: 1400px) {
+    .sectionFirst{
+        .sectionInner{
+            width: 1200px;
+        }
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+        .sectionInner{
+            width: 100% !important;
+            padding: 0 30px;
+        }
+        .sectionFirst{
+
+            &_header{
+                width: 100%;
+                &-Nav{ 
+                    a {
+                        margin-right: toRem(30);
+                    }
+                }
+                &-signInDownload{
+                    .signIn{
+                        margin-right: toRem(10);
+                    }
+                }
+            }
+            &_main{
+                width: 100%;
+                &-text {
+                    width: 360px;
+                }
+            }
+        }
+
+}
+@media only screen and (max-width: 980px) {
+    .sectionFirst{
+        width: 100%;
+        .sectionInner{
+            
+                    
+        }
+        &_header{
+            width: 100%;
+            &-signInDownload{
+                display: none;
+            }
+    input[type=checkbox]{
+      position:absolute;
+      top:-9999px;
+      left:-9999px;
+      background:none
+    }
+    input[type=checkbox]:focus{
+      background:none
+    }
+    label{
+    //   float:right;
+        display:inline-block;
+        cursor:pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    input[type=checkbox]:checked ~ nav{
+      display:block
+    }
+    nav{
+      display:none;
+      position:absolute;
+      right: 20px;
+      top:50px;
+      background-color: $primary-color;
+      padding:0;
+      z-index:99;
+      width: auto;
+    }
+    nav a{
+      color:#FFF;
+      font-size:  15px;
+      padding: 10px 20px;
+      display:block;
+      border-bottom:1px solid rgba(225,225,225,0.1)
+    }
+    }
+    &_main{
+        .sectionInner{
+            position: relative;
+            width: 100%;
+            padding: 20px;
+            flex-direction: column;
+            height: 750px;
+            background: url(../img/svg/firstImg_mob.svg) center bottom no-repeat;
+        }
+        &-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .title,
+            .text{
+                text-align: center;
+            }
+        }
+    }
+    }
+    .sectionCollaborate{
+        &_textAndRating{
+            flex-direction: column;
+            &-text{
+                // text-align: center;
+                width: auto;
+                line-height: toRem(30);
+                margin-bottom: toRem(20);
+
+            }
+            &-rating{
+                width: 50%;
+                justify-content: space-between;
+                &Item{
+                    margin: 0;
+                }
+            }
+        }
+        &_logoList{
+            img{
+                margin-bottom: 30px;
+                margin-right: 30px;
+            }
+        }
+
+    }
+    .sectionFeatures{
+        &_titleText{
+            width: auto;
+        }
+        &_featuresList{
+            flex-direction: column;
+            align-items: flex-start;
+            &-item{
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 525px) {
+    .sectionFirst{
+
+        &_main{
+            .sectionInner{
+                height: 600px;
+            }
+            &-text{
+                
+                .title{
+                    font-size: 28px;
+                }
+                .text{
+                    font-size: 14px;
+                }
+                .btn_green{
+                    @include InterRegular(14);
+                    width: toRem(120);
+                    height: toRem(40);
+                }
+            }
+        }
+    }
+    .sectionCollaborate{
+
+        &_textAndRating{
+            &-text{
+                font-size: 20px;
+            } 
+            &-rating{
+
+                width: 100%;
+                &gItem{
+                    .number{
+                        font-size: toRem(40);
+                    }
+                }
+            } 
+
+        }
+    }
+    .sectionFeatures{
+
+        &_titleText{
+
+            &-title{
+                font-size: toRem(24);
+            }
+            &-text{
+                font-size: toRem(20);
+                opacity: 0.5;
+            }
+        }
+        &_featuresList{
+
+            &-item{
+                &Title{
+                    font-size: toRem(20);
+                }
+                &Text{
+                    font-size: toRem(14);
+                }
+                &LearnMore{
+                    font-size: toRem(20);
+                }
+            }
+        }
+    }
+
+}

@@ -68,9 +68,9 @@ gulp.task('styles', () => {
       //Указать stylus() , sass() или less()
       .pipe(sass())
       //Добавить префиксы
-      .pipe(autoprefixer({
-         cascade: false
-      }))
+      // .pipe(autoprefixer({
+      //    cascade: false
+      // }))
       //Минификация CSS
       .pipe(cleanCSS({
          level: 2
